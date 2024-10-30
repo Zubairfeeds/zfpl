@@ -1,0 +1,303 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-07 11:50:19.676304",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "card_no",
+  "party",
+  "party_name",
+  "column_break_mfl1o",
+  "status",
+  "vehicle_no",
+  "unloading_person",
+  "actual_party",
+  "column_break_jm9i0",
+  "freight",
+  "rejected_bags",
+  "remarks",
+  "section_break_izpr3",
+  "operator",
+  "column_break_s4kbs",
+  "store_accountant",
+  "section_break_tlwrg",
+  "weighment_details",
+  "section_break_zljsc",
+  "safi_weight",
+  "column_break_9eidj",
+  "party_weight",
+  "column_break_nmoyg",
+  "net_weight",
+  "section_break_nq9w6",
+  "item",
+  "item_name",
+  "column_break_4vhmh",
+  "average_weight",
+  "total_bags",
+  "other_poly_bags",
+  "first_weight_section",
+  "scale_in_front",
+  "scale_in_front_preview",
+  "column_break_5jz6j",
+  "scale_in_back",
+  "scale_in_back_preview",
+  "second_weight_section",
+  "scale_out_front",
+  "scale_out_front_preview",
+  "column_break_r9zej",
+  "scale_out_back",
+  "scale_out_back_preview"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_no",
+   "fieldtype": "Data",
+   "label": "Card No"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Link",
+   "label": "Party",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "party.supplier_name",
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "label": "Vehicle No"
+  },
+  {
+   "fieldname": "unloading_person",
+   "fieldtype": "Data",
+   "label": "Unloading Person"
+  },
+  {
+   "fieldname": "freight",
+   "fieldtype": "Data",
+   "label": "Freight"
+  },
+  {
+   "fieldname": "rejected_bags",
+   "fieldtype": "Data",
+   "label": "Rejected Bags"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "actual_party",
+   "fieldtype": "Data",
+   "label": "Actual Party"
+  },
+  {
+   "fieldname": "column_break_jm9i0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "weighment_details",
+   "fieldtype": "Table",
+   "options": "Weighment Details"
+  },
+  {
+   "fieldname": "section_break_tlwrg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_zljsc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "safi_weight",
+   "fieldtype": "Data",
+   "label": "Safi Weight"
+  },
+  {
+   "fieldname": "column_break_s4kbs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party_weight",
+   "fieldtype": "Data",
+   "label": "Party Weight"
+  },
+  {
+   "fieldname": "column_break_nmoyg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_weight",
+   "fieldtype": "Data",
+   "label": "Net Weight"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "WS-.YYYY.-.######"
+  },
+  {
+   "fieldname": "section_break_nq9w6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "column_break_4vhmh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "average_weight",
+   "fieldtype": "Data",
+   "label": "Average Weight"
+  },
+  {
+   "fieldname": "total_bags",
+   "fieldtype": "Data",
+   "label": "Total Bags"
+  },
+  {
+   "fieldname": "other_poly_bags",
+   "fieldtype": "Data",
+   "label": "Other Poly Bags"
+  },
+  {
+   "fieldname": "first_weight_section",
+   "fieldtype": "Section Break",
+   "label": "First Weight"
+  },
+  {
+   "fieldname": "scale_in_front",
+   "fieldtype": "Attach Image",
+   "label": "Scale In Front"
+  },
+  {
+   "fieldname": "scale_in_back",
+   "fieldtype": "Attach Image",
+   "label": "Scale In Back"
+  },
+  {
+   "fieldname": "column_break_5jz6j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "second_weight_section",
+   "fieldtype": "Section Break",
+   "label": "Second Weight"
+  },
+  {
+   "fieldname": "scale_out_back",
+   "fieldtype": "Attach Image",
+   "label": "Scale Out Back"
+  },
+  {
+   "fieldname": "column_break_r9zej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scale_out_front",
+   "fieldtype": "Attach Image",
+   "label": "Scale Out Front"
+  },
+  {
+   "fieldname": "section_break_izpr3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Data",
+   "label": "Operator"
+  },
+  {
+   "fieldname": "column_break_9eidj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "store_accountant",
+   "fieldtype": "Data",
+   "label": "Store Accountant"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nAttached",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_mfl1o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scale_in_front_preview",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "scale_in_back_preview",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "scale_out_back_preview",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "scale_out_front_preview",
+   "fieldtype": "HTML"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-08 16:21:06.449209",
+ "modified_by": "Administrator",
+ "module": "ZFPL",
+ "name": "Weigh Slip",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
