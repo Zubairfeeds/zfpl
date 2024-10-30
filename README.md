@@ -4,5 +4,6 @@ An app for manufacturing process including token etc
 
 #### License
 
-Please contact info@atom-global.comZFPL
+Please contact erp.zubairfeeds.com
 # ZFPL
+Updated By ALi Naqi
